@@ -97,7 +97,7 @@
     swipedetect(el, function(swipedir){
         // swipedir contains either "none", "left", "right", "top", or "down"
         console.log(swipedir)
-       if(swipedir==="top"||swipedir==="none"){
+       if(swipedir==="up"||swipedir==="none"){
            console.log(swipedir)
            $(el).removeClass('in').addClass('out')
            $('.main').not(el).addClass('in').removeClass('out')
@@ -107,7 +107,7 @@
     swipedetect(el2, function(swipedir){
         // swipedir contains either "none", "left", "right", "top", or "down"
         console.log(swipedir)
-        if(swipedir==="top"||swipedir==="none"){
+        if(swipedir==="up"||swipedir==="none"){
             console.log(swipedir)
             $(el2).removeClass('in').addClass('out')
             $('.main').not(el2).addClass('in').removeClass('out')
