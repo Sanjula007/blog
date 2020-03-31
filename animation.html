@@ -96,8 +96,8 @@
     var el = document.getElementById('section1');
     swipedetect(el, function(swipedir){
         // swipedir contains either "none", "left", "right", "top", or "down"
-         
-       if(swipedir==="down"){
+
+       if(swipedir==="down"&&swipedir==="none"){
            $(el).removeClass('in').addClass('out')
            $('.main').not(el).addClass('in').removeClass('out')
        }
@@ -105,7 +105,7 @@
     var el2 = document.getElementById('section2');
     swipedetect(el2, function(swipedir){
         // swipedir contains either "none", "left", "right", "top", or "down"
-        if(swipedir==="down"){
+        if(swipedir==="down"&&swipedir==="none"){
             $(el2).removeClass('in').addClass('out')
             $('.main').not(el2).addClass('in').removeClass('out')
         }
