@@ -96,7 +96,7 @@
     var el = document.getElementById('section1');
     swipedetect(el, function(swipedir){
         // swipedir contains either "none", "left", "right", "top", or "down"
-
+        console.log(swipedir)
        if(swipedir==="top"||swipedir==="none"){
            console.log(swipedir)
            $(el).removeClass('in').addClass('out')
@@ -106,7 +106,7 @@
     var el2 = document.getElementById('section2');
     swipedetect(el2, function(swipedir){
         // swipedir contains either "none", "left", "right", "top", or "down"
-
+        console.log(swipedir)
         if(swipedir==="top"||swipedir==="none"){
             console.log(swipedir)
             $(el2).removeClass('in').addClass('out')
